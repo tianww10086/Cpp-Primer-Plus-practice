@@ -1,12 +1,12 @@
 
-//´´½¨¶¯Ì¬Êı×é
+//åˆ›å»ºåŠ¨æ€æ•°ç»„
 #include<iostream>
 #include<ctime>
 void sum_arr(int a[], int n);
 using namespace std;
 int main() {
 	int x;
-	cout << "´´½¨¶¯Ì¬Êı×é:";
+	cout << "åˆ›å»ºåŠ¨æ€æ•°ç»„:";
 	cin >> x;
 	int* arr = new int[x];
 	sum_arr(arr, x);
