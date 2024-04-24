@@ -1,0 +1,22 @@
+#define _CRT_SECURE_NO_WARNINGS 1
+
+/*
+	编写一个程序，显示求模运算的结果，把用户输入的第一个整数作为求模运算的第2个运算对象
+	，用户后面输入的数是第1个运算对象
+*/
+#include <stdio.h>
+int main(){
+	int second;
+	int first;
+	do {
+		printf("请输入第2个运算对象：");
+		scanf("%d", &second);
+		printf("现在输入第1个运算对象:");
+		scanf("%d", &first);
+		printf("%d %% %d = %d\n", first, second, first % second);
+	} while (second > 0 && first > 0);
+
+	return 0;
+}
+
+
