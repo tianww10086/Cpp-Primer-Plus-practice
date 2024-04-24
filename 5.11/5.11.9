@@ -1,0 +1,22 @@
+#define _CRT_SECURE_NO_WARNINGS 1
+
+/*
+	输入一个华氏温度。把值传给temperatures（）函数，该函数计算摄氏温度和开氏温度，显示小数点后两位
+	摄氏温度 = 5.0/9.0*（华氏温度-32.0）
+	开式温度 = 摄氏温度+273.16
+*/
+#include <stdio.h>
+void temperature(double FHT);
+int main(){
+	double Fahrenheit; //华氏温度
+	printf("请输入一个华氏温度：");
+	scanf("%lf", &Fahrenheit);
+	temperature(Fahrenheit);
+}
+void temperature(double FHT) {
+	double Celsius = 5.0 / 9.0 * (FHT - 32.0); //摄氏
+	double KTT = Celsius + 273.16; //开式
+	printf("华氏温度 摄氏温度 开式温度\n");
+	printf("%-8.2lf %-8.2lf %-8.2lf", FHT, Celsius, KTT);
+}
+
