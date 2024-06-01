@@ -30,4 +30,6 @@ int main() {
 	for(int i=0;i<car_num;i++){
 		cout<<"生产商："<<car_ary[i].producers<<" "<<"生产年份: "<<car_ary[i].produce_year<<endl;
 	}
+
+	delete[] car_ary;
 }
